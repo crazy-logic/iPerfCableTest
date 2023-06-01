@@ -44,7 +44,7 @@ ip netns exec ns_client iperf -c 192.168.10.1 -P $3 -t $5 -i 10
 killall iperf
 
 ip netns exec ns_client iperf -s &
-ip netns exec ns_server iperf -c 192.168.10.2 -P $3 -t $-i 10
+ip netns exec ns_server iperf -c 192.168.10.2 -P $3 -t $5 -i 10
 
 killall iperf
 
